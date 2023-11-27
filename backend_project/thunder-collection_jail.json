@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "jail",
+    "dateExported": "2023-11-25T15:49:18.983Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "af73558a-22ec-48b2-94cf-d44677ae6b73",
+            "colId": "c04cde61-6468-4858-8a0c-c66aaad4b0cc",
+            "containerId": "",
+            "name": "create-jail",
+            "url": "http://localhost:3000/jail",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-25T14:54:23.192Z",
+            "modified": "2023-11-25T15:01:40.386Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"capacity\":30,\n  \"jailNumber\":\"12a\",\n  \"securityLevel\":\"meduim\",\n  \"confortLevel\":\"zero\",\n  \"employee\":\"b66ca216-5ea5-4326-b335-1db6af961909\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a813fd35-9746-4318-841a-b9822b0e7638",
+            "colId": "c04cde61-6468-4858-8a0c-c66aaad4b0cc",
+            "containerId": "",
+            "name": "list-jail",
+            "url": "http://localhost:3000/jail",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-25T15:02:09.286Z",
+            "modified": "2023-11-25T15:02:16.791Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "aee61fd7-7860-4315-a382-3e5ce3779b3a",
+            "colId": "c04cde61-6468-4858-8a0c-c66aaad4b0cc",
+            "containerId": "",
+            "name": "update-jail",
+            "url": "http://localhost:3000/jail",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-11-25T15:04:12.914Z",
+            "modified": "2023-11-25T15:05:26.511Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"af319f4a-19d5-4685-9c33-f9f6fec4ec21\",\n  \"capacity\":100,\n  \"jailNumber\":\"13a\",\n  \"securityLevel\":\"meduim\",\n  \"confortLevel\":\"high\",\n  \"employee\":\"b66ca216-5ea5-4326-b335-1db6af961909\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ca6ecf47-84ce-4266-925e-cba6a807d842",
+            "colId": "c04cde61-6468-4858-8a0c-c66aaad4b0cc",
+            "containerId": "",
+            "name": "delete-jail",
+            "url": "http://localhost:3000/jail/af319f4a-19d5-4685-9c33-f9f6fec4ec21",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-11-25T15:06:24.144Z",
+            "modified": "2023-11-25T15:06:55.513Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

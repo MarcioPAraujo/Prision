@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "employee",
+    "dateExported": "2023-11-23T12:09:01.822Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c4a424bf-385c-4dc5-8a93-8a0cbc5f24da",
+            "colId": "b17069b6-9484-472c-b274-9bb5585aeede",
+            "containerId": "",
+            "name": "create-employee",
+            "url": "http://localhost:3000/employee",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-23T11:50:53.813Z",
+            "modified": "2023-11-23T11:55:16.626Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"hoffman\",\n  \"turno\":\"noturno\",\n  \"task\":\"refeitorio\",\n  \"accessLevel\":\"1\",\n  \"equipament\":\"ladle\",\n  \"prision\":\"5a60e305-ae0f-4642-8b76-0ea2f70a8dba\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b875761b-ad7d-408d-8682-ab7a24e240f6",
+            "colId": "b17069b6-9484-472c-b274-9bb5585aeede",
+            "containerId": "",
+            "name": "list-employee",
+            "url": "http://localhost:3000/employee",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-23T11:55:58.644Z",
+            "modified": "2023-11-23T11:56:07.952Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "64cd211a-b0ff-4f1b-9541-165ded8973a7",
+            "colId": "b17069b6-9484-472c-b274-9bb5585aeede",
+            "containerId": "",
+            "name": "update-employee",
+            "url": "http://localhost:3000/employee",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-23T11:57:32.565Z",
+            "modified": "2023-11-23T11:59:44.571Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"337991ad-e4f9-4740-9b30-f83134609105\",\n  \"name\":\"hoffman\",\n  \"turno\":\"matutino\",\n  \"task\":\"detectve\",\n  \"accessLevel\":\"1\",\n  \"equipament\":\"ladle\",\n  \"prision\":\"5a60e305-ae0f-4642-8b76-0ea2f70a8dba\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9ac09205-73a8-43a9-b56f-92a333c3a953",
+            "colId": "b17069b6-9484-472c-b274-9bb5585aeede",
+            "containerId": "",
+            "name": "delete-employee",
+            "url": "http://localhost:3000/employee/b6fb0357-d6ff-4ba7-8689-20fe32972ccc",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-11-23T12:00:15.435Z",
+            "modified": "2023-11-23T12:02:44.824Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

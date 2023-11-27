@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "prisoner",
+    "dateExported": "2023-11-25T15:49:48.495Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ad80c88b-c5bc-4c7c-aa38-74ea8d625759",
+            "colId": "fcc48a39-8bac-457b-bb00-e56348c2728c",
+            "containerId": "",
+            "name": "create-prisoner",
+            "url": "http://localhost:3000/prisoner",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-25T15:10:02.318Z",
+            "modified": "2023-11-25T15:12:35.169Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"john\",\n  \"age\":44,\n  \"weight\":78,\n  \"height\":188,\n  \"nationality\":\"german\",\n  \"jail\":\"df428f03-f009-4c27-bd91-c6a2274dcf06\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c8c2d893-d471-4d79-9fb9-40999d75f210",
+            "colId": "fcc48a39-8bac-457b-bb00-e56348c2728c",
+            "containerId": "",
+            "name": "list-prisoner",
+            "url": "http://localhost:3000/prisoner",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-25T15:13:43.965Z",
+            "modified": "2023-11-25T15:13:50.686Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2a596e5d-d063-43df-9394-5a50b774969a",
+            "colId": "fcc48a39-8bac-457b-bb00-e56348c2728c",
+            "containerId": "",
+            "name": "update-prisoner",
+            "url": "http://localhost:3000/prisoner",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-25T15:14:20.042Z",
+            "modified": "2023-11-25T15:15:27.951Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"f8fd23f5-1a72-44f6-86b5-812ce0fc41c5\",\n  \"name\":\"bob\",\n  \"age\":44,\n  \"weight\":78,\n  \"height\":188,\n  \"nationality\":\"german\",\n  \"jail\":\"df428f03-f009-4c27-bd91-c6a2274dcf06\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cf5630ae-8691-4550-9938-13a68686db1b",
+            "colId": "fcc48a39-8bac-457b-bb00-e56348c2728c",
+            "containerId": "",
+            "name": "delete-prisoner",
+            "url": "http://localhost:3000/prisoner/f8fd23f5-1a72-44f6-86b5-812ce0fc41c5",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-11-25T15:16:02.146Z",
+            "modified": "2023-11-25T15:16:21.393Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "reabilitation-program",
+    "dateExported": "2023-11-25T16:52:39.039Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c63a44ba-59ee-44e5-8942-ff60ddf5f41e",
+            "colId": "190a819b-9220-4ef5-80f3-88f80bd2e39e",
+            "containerId": "",
+            "name": "create-reabilitation-program",
+            "url": "http://localhost:3000/reabilitation-program",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-25T16:35:50.711Z",
+            "modified": "2023-11-25T16:48:26.722Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"task\" :\"sweep streets\",\n \"timesPerWeek\":7,\n \"duration\":\"all sentence durartion\",\n \"subjectOfStudy\":\"mathematic\",\n \"prisoner\":\"ce3a4e52-405c-4830-8f61-d43a5b310914\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f17aa016-32a0-4b2e-853b-9f2ff2562769",
+            "colId": "190a819b-9220-4ef5-80f3-88f80bd2e39e",
+            "containerId": "",
+            "name": "list-reabilitation-program",
+            "url": "http://localhost:3000/reabilitation-program",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-25T16:49:06.459Z",
+            "modified": "2023-11-25T16:49:12.311Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "299dcb80-5669-46ca-94bc-99b48086c179",
+            "colId": "190a819b-9220-4ef5-80f3-88f80bd2e39e",
+            "containerId": "",
+            "name": "update-reabiliataion-program",
+            "url": "http://localhost:3000/reabilitation-program",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-25T16:49:56.331Z",
+            "modified": "2023-11-25T16:51:33.961Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"9a6e261c-ca6e-44f9-90c7-ba2df5753de2\",\n \"task\" :\"bricklayer\",\n \"timesPerWeek\":6,\n \"duration\":\"all sentence durartion\",\n \"subjectOfStudy\":\"mathematic\",\n \"prisoner\":\"ce3a4e52-405c-4830-8f61-d43a5b310914\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4f54c79c-de61-4cfb-98ec-bb4e9b7aee2c",
+            "colId": "190a819b-9220-4ef5-80f3-88f80bd2e39e",
+            "containerId": "",
+            "name": "delete-reabilitation-program",
+            "url": "http://localhost:3000/reabilitation-program/9a6e261c-ca6e-44f9-90c7-ba2df5753de2",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-11-25T16:52:03.236Z",
+            "modified": "2023-11-25T16:52:20.913Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

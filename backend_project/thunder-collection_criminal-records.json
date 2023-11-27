@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "criminal-records",
+    "dateExported": "2023-11-25T15:50:10.451Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0be2f1b4-ad27-4488-b8b8-231e3cc93462",
+            "colId": "b68f8aaf-92ca-4d1b-a21d-3af159c3abb0",
+            "containerId": "",
+            "name": "create-criminal-records",
+            "url": "http://localhost:3000/criminal-record",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-25T15:32:00.231Z",
+            "modified": "2023-11-25T15:39:38.182Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"3113af8d-14be-40a0-b623-65604dc5b9ad\",\n  \"crime\":\"thief\",\n  \"sentence\":\"10 years\",\n  \"section\":\"lazies\",\n  \"prisoner\":\"ba38e927-35ea-40d5-a558-f29646a4f9b8\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ff549ccd-1e5d-4b7d-a27a-8bec6827f80f",
+            "colId": "b68f8aaf-92ca-4d1b-a21d-3af159c3abb0",
+            "containerId": "",
+            "name": "list-criminal-record",
+            "url": "http://localhost:3000/criminal-record",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-25T15:37:12.315Z",
+            "modified": "2023-11-25T15:37:18.571Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d6e4ceba-75fb-4881-996c-7e74a82a16e8",
+            "colId": "b68f8aaf-92ca-4d1b-a21d-3af159c3abb0",
+            "containerId": "",
+            "name": "update-criminal-record",
+            "url": "http://localhost:3000/criminal-record",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-25T15:38:27.153Z",
+            "modified": "2023-11-25T15:40:52.274Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\":\"3113af8d-14be-40a0-b623-65604dc5b9ad\",\n  \"crime\":\"thief\",\n  \"sentence\":\"90 years\",\n  \"section\":\"rioters\",\n  \"prisoner\":\"ba38e927-35ea-40d5-a558-f29646a4f9b8\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "32b10f14-7570-4435-a321-a5305e9f0380",
+            "colId": "b68f8aaf-92ca-4d1b-a21d-3af159c3abb0",
+            "containerId": "",
+            "name": "delete-criminal-records",
+            "url": "http://localhost:3000/criminal-record/2c9e8f1e-a5ad-4953-9c73-909177847664",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-11-25T15:41:29.432Z",
+            "modified": "2023-11-25T15:45:29.232Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
