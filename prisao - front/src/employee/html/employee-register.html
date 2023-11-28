@@ -13,34 +13,38 @@
     <main>
         <div>
             <label for="name">Name</label>
-            <input type="text" required>
-            turno,task,accesslevel,equipament prision
+            <input type="text" required id="name">
+            
         </div>
         <div>
             <label for="turno">Shift</label>
-            <input type="text" required>
+            <input type="text" required id="turno">
         </div>
         <div>
             <label for="task">Task</label>
-            <input type="text">
+            <input type="text" id="task">
         </div>
         <div>
             <label for="accessLevel">Access Level</label>
-            <input type="text">
+            <input type="text" id="accessLevel">
         </div>
         <div>
             <label for="equipament">Equipament</label>
-            <input type="text">
+            <input type="text" id="equipament">
         </div>
         <div>
-            <label for="prision"></label>
+            <label for="prision">Prision</label>
             <select name="prision" id="prision"></select>
         </div>
         <div>
-            <button id="save">save</button>
+            <button id="save" value="register">save</button>
             <button id="clear">clear</button>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <a href="employee.html">list of guards</a>
+    </footer>
+
+    <script src="../javascript/employee-register.js"></script>
 </body>
 </html>

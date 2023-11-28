@@ -3,7 +3,7 @@
    "host": "localhost",
    "port": 5432,
    "username": "postgres",
-   "password": "magicword_do",
+   "password": "umc@2023",
    "database": "app",
    "synchronize": false,
    "logging": false,

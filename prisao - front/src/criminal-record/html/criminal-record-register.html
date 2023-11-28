@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register new record</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    <h1>New record</h1>
+    <div>
+        <label for="crime">Crime</label>
+        <input type="text">
+    </div>
+    <div>
+        <label for="sentence">Sentence</label>
+        <input type="text">
+    </div>
+    <div>
+        <label for="section">Section</label>
+        <input type="text" name="section" id="section" list="list">
+        <datalist id="list">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="E">E</option>
+            <option value="D">D</option>
+        </datalist>
+    </div>
+    <div>
+        <label for="prisoner">Prisoner</label>
+        <select name="prisoner" id="prisoner">
+            
+        </select>
+    </div>
+    <div>
+        <button id="save">Save</button>
+        <button id="clear">Clear</button>
+    </div>
+
+    <script src="../javascript/criminal-record-register.js"></script>
+</body>
+</html>

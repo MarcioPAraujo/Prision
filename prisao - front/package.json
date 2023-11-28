@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html"
+    "dev": "parcel src/employee-register.html"
   },
   "keywords": [],
   "author": "",
