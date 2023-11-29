@@ -18,20 +18,22 @@ function loadTable(){
                 { data: 'task' },
                 {
                     data: null,
-                    defaultContent: '<button id="edit">Editar</button>&nbsp;<button id="excluir">Excluir</button>',
+                    defaultContent: '<button id="edit" value = "edit">Editar</button>&nbsp;<button id="excluir" value = "exclude">Excluir</button>',
                     targets: -1
                 },
             ]
         });
         table.on('click', 'button', function (e) {
             var data = table.row( $(this).parents('tr') ).data();
-            alert(data.id);
+            //alert(data.id);
           
-            if(this.id==='edit'){
+            if(this.id==="edit"){
+                alert('edit')
                 loadEmployee(data.id);
                 
             } else{
-                //deleteRecord(data.id);
+                alert('dell')
+                deleteRecord(data.id);
             }           
         });        
     }).catch(function (error) {
@@ -51,4 +53,17 @@ async function loadEmployee(id){
     }).catch(function (error) {
         console.log(error);
     });
+}
+
+async function deleteRecord(id) {
+    await axios.delete(url + 'employee/'+ id , {
+    }).then(function (response) {
+        alert(`Registro de ${response.status}Excluido com Sucesso`);
+        refreshtable()
+    }).catch(function (error) {
+        console.log(error);
+    });
+}
+async function refreshtable() {
+    window.location.reload(true);
 }
