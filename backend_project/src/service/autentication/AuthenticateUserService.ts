@@ -54,8 +54,8 @@ class AuthenticateUserService {
     if(!userAlreadyExists){
       throw new Error("Email incorreto");
     }
-    const myEmail = password
-    const passwordHash = await hash(myEmail,8);
+    const newPaswword = password
+    const passwordHash = await hash(newPaswword,8);
     userAlreadyExists.password = passwordHash
     
     const user =await usersRepositories.update(userAlreadyExists.id,userAlreadyExists)
@@ -65,7 +65,7 @@ class AuthenticateUserService {
     subject:'email teste',
     html:`
     <h1>Olá percebemos que você esqueceu a senha!!!</h1>
-    <p>Sua nova senha é:</p><b>${myEmail}</b>
+    <p>Sua nova senha é:</p><b>${newPaswword}</b>
     `
     };
     let transporter = nodemailer.createTransport({

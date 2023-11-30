@@ -81,7 +81,7 @@ const listPrisionController = new ListprisionController()
 const updatePrisionController = new UpdatePrisionController()
 
 const router = Router();
-//router.post("/login", autenticationUserController.handle);
+router.post("/login", autenticationUserController.handle);
 
 router.post("/users", createUserController.handle);
 router.post("/criminal-record",createCriminalRecordController.handle)
