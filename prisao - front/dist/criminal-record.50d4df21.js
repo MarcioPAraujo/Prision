@@ -3025,8 +3025,8 @@ function _deleteRecord() {
         case 0:
           _context2.next = 2;
           return _axios.default.delete(url + 'criminal-record/' + id, {}).then(function (response) {
-            alert("Registro de ".concat(response.status, "Excluido com Sucesso"));
             refreshtable();
+            alert("Registro de ".concat(response.status, "Excluido com Sucesso"));
           }).catch(function (error) {
             console.log(error);
           });
@@ -3046,7 +3046,7 @@ function _refreshtable() {
     return _regeneratorRuntime().wrap(function _callee3$(_context3) {
       while (1) switch (_context3.prev = _context3.next) {
         case 0:
-          window.location.reload(true);
+          window.location.reload();
         case 1:
         case "end":
           return _context3.stop();
@@ -3080,7 +3080,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49569" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42999" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

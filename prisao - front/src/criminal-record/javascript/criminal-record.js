@@ -56,12 +56,13 @@ async function loadCriminalRecords(id){
 async function deleteRecord(id) {
     await axios.delete(url + 'criminal-record/'+ id , {
     }).then(function (response) {
-        alert(`Registro de ${response.status}Excluido com Sucesso`);
         refreshtable()
+        alert(`Registro de ${response.status}Excluido com Sucesso`);
+        
     }).catch(function (error) {
         console.log(error);
     });
 }
 async function refreshtable() {
-    window.location.reload(true);
+    window.location.reload();
 }

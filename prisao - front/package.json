@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/reabilitation-program/html/reabilitation-program.html"
+    "dev": "parcel src/home.html"
     
   },
   "keywords": [],
