@@ -15,11 +15,11 @@
     <main>
         <div>
             <label for="capacity">places</label>
-            <input type="number" required>
+            <input type="number" required id="capacity">
         </div>
         <div>
             <label for="jailNumber">Jail number</label>
-            <input type="text" required>
+            <input type="text" required id="jailNumber">
         </div>
         <div>
             <label for="securityLevel">Security Level</label>
@@ -27,7 +27,7 @@
             <output id="rangeData">50</output>
         </div>
         <div>
-            <legend>Confort Level</legend>
+            <!-- <legend>Confort Level</legend>
             <input type="radio" name="confortLevel" id="poor"> 
             <label for="poor">Poor</label>
 
@@ -38,18 +38,28 @@
             <label for="average">Average</label>
 
             <input type="radio" name="confortLevel" id="good">
-            <label for="checkbox" id="good">Good</label>
+            <label for="good" >Good</label>
 
             <input type="radio" name="confortLevel" id="great">
-            <label for="great">Great</label>
+            <label for="great">Great</label> -->
+            <label for="confortLevel"> Confort</label>
+            <select name="confortLevel" id="confortLevel">
+                <option value="poor">Poor</option>
+                <option value="low">Low</option>
+                <option value="average">Average</option>
+                <option value="good">Good</option>
+                <option value="great">Great</option>
+
+            </select>
         </div>
         <div>
+            <label for="employee">Carcereiro</label>
             <select name="employee" id="employee">
 
             </select>
         </div>
         <div>
-            <button id="save">Save</button>
+            <button id="save" value="register">Save</button>
             <button id="clear">Clear</button>
         </div>
     </main>

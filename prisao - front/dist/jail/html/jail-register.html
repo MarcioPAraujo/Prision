@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jails Register</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Register a new jail</h1>
+    </header>
+
+    <main>
+        <div>
+            <label for="capacity">places</label>
+            <input type="number" required="" id="capacity">
+        </div>
+        <div>
+            <label for="jailNumber">Jail number</label>
+            <input type="text" required="" id="jailNumber">
+        </div>
+        <div>
+            <label for="securityLevel">Security Level</label>
+            <input type="range" id="securityLevel" oninput="rangeData.innerHTML = Number(securityLevel.value)">
+            <output id="rangeData">50</output>
+        </div>
+        <div>
+            <!-- <legend>Confort Level</legend>
+            <input type="radio" name="confortLevel" id="poor"> 
+            <label for="poor">Poor</label>
+
+            <input type="radio" name="confortLevel" id="low">
+            <label for="low">Low</label>
+
+            <input type="radio" name="confortLevel" id="average">
+            <label for="average">Average</label>
+
+            <input type="radio" name="confortLevel" id="good">
+            <label for="good" >Good</label>
+
+            <input type="radio" name="confortLevel" id="great">
+            <label for="great">Great</label> -->
+            <label for="confortLevel"> Confort</label>
+            <select name="confortLevel" id="confortLevel">
+                <option value="poor">Poor</option>
+                <option value="low">Low</option>
+                <option value="average">Average</option>
+                <option value="good">Good</option>
+                <option value="great">Great</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="employee">Carcereiro</label>
+            <select name="employee" id="employee">
+
+            </select>
+        </div>
+        <div>
+            <button id="save" value="register">Save</button>
+            <button id="clear">Clear</button>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="/ad895c6015ead91225b93ad23f039950.js"></script>
+</body>
+</html>
