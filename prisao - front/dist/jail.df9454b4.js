@@ -2944,7 +2944,7 @@ try {
   }
 }
 
-},{}],"criminal-record/javascript/criminal-record.js":[function(require,module,exports) {
+},{}],"jail/javascript/jail.js":[function(require,module,exports) {
 "use strict";
 
 var _axios = _interopRequireDefault(require("axios"));
@@ -2959,15 +2959,15 @@ $(document).ready(function () {
   loadTable();
 });
 function loadTable() {
-  _axios.default.get(url + 'criminal-record', {}).then(function (response) {
-    var table = new DataTable("#table_records", {
+  _axios.default.get(url + 'jail', {}).then(function (response) {
+    var table = new DataTable("#table_jail", {
       data: response.data,
       columns: [{
         data: 'id'
       }, {
-        data: 'crime'
+        data: 'capacity'
       }, {
-        data: 'sentence'
+        data: 'jailNumber'
       }, {
         data: null,
         defaultContent: '<button id="edit" value = "edit">Editar</button>&nbsp;<button id="excluir" value = "exclude">Excluir</button>',
@@ -2980,7 +2980,7 @@ function loadTable() {
 
       if (this.id === "edit") {
         alert('edit');
-        loadCriminalRecords(data.id);
+        loadPrision(data.id);
       } else {
         alert('dell');
         deleteRecord(data.id);
@@ -2990,20 +2990,19 @@ function loadTable() {
     alert(error);
   });
 }
-function loadCriminalRecords(_x) {
-  return _loadCriminalRecords.apply(this, arguments);
+function loadPrision(_x) {
+  return _loadPrision.apply(this, arguments);
 }
-function _loadCriminalRecords() {
-  _loadCriminalRecords = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(id) {
+function _loadPrision() {
+  _loadPrision = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(id) {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return _axios.default.get(url + 'criminal-record/' + id, {}).then(function (response) {
+          return _axios.default.get(url + 'jail/' + id, {}).then(function (response) {
             $("#id").val(response.data.id);
-            $("#crime").val(response.data.crime);
-            $("#sentence").val(response.data.sentence);
-            $("#prisoner").val(response.prisoner.name);
+            $("#capacity").val(response.data.capacity);
+            $("#jailNumber").val(response.data.jailnumber);
           }).catch(function (error) {
             console.log(error);
           });
@@ -3013,7 +3012,7 @@ function _loadCriminalRecords() {
       }
     }, _callee);
   }));
-  return _loadCriminalRecords.apply(this, arguments);
+  return _loadPrision.apply(this, arguments);
 }
 function deleteRecord(_x2) {
   return _deleteRecord.apply(this, arguments);
@@ -3024,9 +3023,9 @@ function _deleteRecord() {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
           _context2.next = 2;
-          return _axios.default.delete(url + 'criminal-record/' + id, {}).then(function (response) {
+          return _axios.default.delete(url + 'jail/' + id, {}).then(function (response) {
+            alert("Registro de ".concat(response.data, "Excluido com Sucesso"));
             refreshtable();
-            alert("Registro de ".concat(response.status, "Excluido com Sucesso"));
           }).catch(function (error) {
             console.log(error);
           });
@@ -3046,7 +3045,7 @@ function _refreshtable() {
     return _regeneratorRuntime().wrap(function _callee3$(_context3) {
       while (1) switch (_context3.prev = _context3.next) {
         case 0:
-          window.location.reload();
+          window.location.reload(true);
         case 1:
         case "end":
           return _context3.stop();
@@ -3224,5 +3223,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","criminal-record/javascript/criminal-record.js"], null)
-//# sourceMappingURL=/criminal-record.50d4df21.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","jail/javascript/jail.js"], null)
+//# sourceMappingURL=/jail.df9454b4.js.map
