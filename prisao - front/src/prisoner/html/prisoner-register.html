@@ -5,43 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="../../reabilitation-program/form.css">
 </head>
 <body>
-    <h1>cadastro de Prisioneiro</h1>
-    <div>
-        <div>
-            <label for="name">Name</label>
+    <header>
+        <h1>Register a new prisoner</h1>
+        <div id="header-image"></div>
+    </header>
+
+    <main id="container">
+        <div class="fields">
+            <label for="name">Name</label><br>
             <input type="text" id="name" >
         </div>
-        <div>
-            <label for="height">height</label>
+        <div class="fields">
+            <label for="height">height</label><br>
             <input type="number" id="height" min="0">
         </div>
-        <div>
-            <label for="weight">weight</label>
+        <div class="fields">
+            <label for="weight">weight</label><br>
             <input type="number" id="weight" min="0">
         </div>
-        <div>
-            <label for="age">age</label>
+        <div class="fields">
+            <label for="age">age</label><br>
             <input type="number" id="age" min="0">
         </div>
-        <div>
-            <label for="nationality">nationality</label>
+        <div class="fields">
+            <label for="nationality">nationality</label><br>
             <input type="text" id="nationality">
         </div>
-        <div>
+        <div class="fields">
             <label for="jail">jail</label>
             <select name="jail" id="jail">
 
             </select>
         </div>
-        <div>
+        <div class="fields">
             <button id="save" value="register">Save</button>
             <button id="clear">Clear</button>
 
         </div>
-    </div>
+    
 
     <script src="../javascript/prisoner-register.js"></script>
+    </main>
 </body>
 </html>

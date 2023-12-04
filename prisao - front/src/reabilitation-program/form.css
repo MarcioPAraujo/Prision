@@ -8,6 +8,9 @@
     margin: 0px;
     padding: 0px;
 }
+html{
+    margin: 0px;
+}
 body{
     height: 100vh;
     background-image: linear-gradient(var(--body-background));
@@ -40,7 +43,7 @@ h1{
 
     
 }
-div{
+.fields{
     margin: 1em;
 }
 
