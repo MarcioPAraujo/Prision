@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="../form.css">
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Register a new program</h1>
+        <div id="header-image"></div>
     </header>
 
-    <main>
+    <main id="container">
         <div>
-            <label for="task">Task</label>
+            <label for="task">Task</label><br>
             <input type="text" required id="task">
         </div>
         <div>
-            <label for="timePerWeek">Times per week</label>
+            <label for="timePerWeek">Times per week</label><br>
             <input type="number" id="timePerWeek">
         </div>
         <div>
-            <label for="duration">Duration</label>
+            <label for="duration">Duration</label><br>
             <input type="text" id="duration">
         </div>
         <div>
-            <label for="subjectOfStudy">Subject of study</label>
+            <label for="subjectOfStudy">Subject of study</label><br>
             <input type="text" id="subjectOfStudy">
         </div>
         <div>
@@ -38,10 +40,10 @@
             <button id="save" value="register">Save</button>
             <button id="clear">Clear</button>
         </div>
-    </main>
+    
 
-    <footer></footer>
 
     <script src="../javascript/reabilitation-program-register.js"></script>
+</main>
 </body>
 </html>

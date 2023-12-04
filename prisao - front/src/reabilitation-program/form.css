@@ -1,0 +1,68 @@
+@charset "UTF-8";
+:root{
+    --border-color:hsl(197, 100%, 50%);
+    --h1-background:hsl(0, 0%, 10%);
+    /*--body-background:hsl(298, 100%, 50%),hsl(240, 100%, 50%);*/
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(var(--body-background));
+}
+#header-image{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/71/Grand_Study_Hall%2C_New_York_Public_Library_%285914733818%29.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw ;
+    background-position: bottom;
+
+    width: 100vw;
+    margin: 0px;
+    height: 35vh;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: var(--h1-background)
+    
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    
+}
+div{
+    margin: 1em;
+}
+
+input{
+    border-color: black;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+input:hover{
+    border-color: var(--border-color);
+    border-radius: 6px;
+    transition: 0.5s;
+}
+button{
+    padding: 6px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: blue;
+    color: white;
+}
+button:hover{
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: var(--border-color);
+}
